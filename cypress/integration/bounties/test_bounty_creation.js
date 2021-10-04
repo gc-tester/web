@@ -8,6 +8,7 @@ describe('Creating a new bounty', () => {
   });
 
   afterEach(() => {
+    cy.disconnectMetamaskWallet();
     cy.logout();
   });
 
